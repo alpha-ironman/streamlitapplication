@@ -6,6 +6,7 @@ import re
 from PIL import Image
 from io import BytesIO
 
+st.set_page_config(page_title="AO Data Analytics", page_icon="📊", layout="centered", initial_sidebar_state="expanded", menu_items=None)
  
 
 def main():
