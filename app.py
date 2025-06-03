@@ -6,36 +6,6 @@ import re
 from PIL import Image
 from io import BytesIO
 
-
-#####################################################
-
-
-
-def add_logo(logo_path, width, height):
-    """Read and return a resized logo"""
-    logo = Image.open(logo_path)
-    modified_logo = logo.resize((width, height))
-    return modified_logo
-
-my_logo = add_logo(logo_path=r"C:\Users\athanneru\OneDrive - hsconline\Desktop\Data science projetcs- AP _2023\Ap data analytics\MicrosoftTeams-image.png", 
-                   width=350, height=120)
-st.sidebar.image(my_logo)
-
-st.sidebar.write("""## Project Objectives
-a) **Duplicates**:    
-This project is related to AP DATA ANALYTICS, where this app finds duplicates based on ***certain criteria***. It will help us to improve quality of data.
-
-**Note**: Duplicate data occurs when storing the same data entries in the same data storage system, or across multiple systems. 
-
-b) **Outliers**    
-Furthermore, this app displays the outliers in the data on given thresholds and display them.
-
-**Note**: An outlier is an observation that lies an abnormal distance from other values in a random sample from a population.
-
-""")
-
-
-######################################################
  
 
 def main():
